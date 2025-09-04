@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:;">
+    <title>UR讀書會</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- 頁面頭部 -->
+    <header>
+        <h1>UR讀書會</h1>
+        <p class="subtitle">讀書會倉庫</p>
+    </header>
+
+    <!-- 期數導航 -->
+    <nav class="period-nav">
+        <button class="period-btn" data-period="1">第一期</button>
+        <button class="period-btn" data-period="2">第二期</button>
+        <button class="period-btn" data-period="3">第三期</button>
+        <button class="period-btn" data-period="4">第四期</button>
+        <button class="period-btn" data-period="5">第五期</button>
+        <button class="period-btn" data-period="6">第六期</button>
+    </nav>
+
+    <!-- 主要內容區域 -->
+    <main>
+        <!-- 書籍列表 -->
+        <div id="bookList" class="book-list"></div>
+        <button id="addBookBtn" class="add-button">新增書籍</button>
+    </main>
+
+    <!-- 新增書籍表單 -->
+    <div id="addBookForm" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2>新增書籍</h2>
+            <form id="bookForm">
+                <div class="form-group">
+                    <label for="bookPeriod">期數</label>
+                    <input type="number" id="bookPeriod" min="1" max="6" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookTitle">書名</label>
+                    <input type="text" id="bookTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookAuthor">作者</label>
+                    <input type="text" id="bookAuthor" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookPresenter">出書人</label>
+                    <input type="text" id="bookPresenter" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookSummary">簡介</label>
+                    <textarea id="bookSummary" required></textarea>
+                </div>
+                <button type="submit" class="submit-review-btn">新增</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 書籍詳細資訊 -->
+    <div id="bookDetails" class="modal hidden"></div>
+
+    <!-- 新增評論表單 -->
+    <div id="addReviewForm" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2>新增評論</h2>
+            <form id="reviewForm">
+                <input type="hidden" id="reviewBookId">
+                <div class="form-group">
+                    <label for="reviewerName">評論者姓名</label>
+                    <input type="text" id="reviewerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewRating">評分 (1-5)</label>
+                    <input type="number" id="reviewRating" min="1" max="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewComment">評論內容</label>
+                    <textarea id="reviewComment" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="reviewLink">完整心得連結（選填）</label>
+                    <input type="url" id="reviewLink">
+                </div>
+                <button type="submit" class="submit-review-btn">提交評論</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 確認對話框 -->
+    <div id="confirmDialog" class="modal hidden">
+        <div class="modal-content">
+            <h2>確認刪除</h2>
+            <p id="confirmMessage"></p>
+            <div class="button-group">
+                <button id="confirmDelete" class="danger-button">確定</button>
+                <button id="cancelDelete" class="cancel-button">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

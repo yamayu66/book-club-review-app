@@ -1,0 +1,63 @@
+// 顯示書籍詳細資訊
+function showBookDetails(bookId) {
+    const book = books.find(b => b.id === bookId);
+    if (!book) return;
+
+    const bookDetails = document.getElementById('bookDetails');
+    const averageRating = calculateAverageRating(book.reviews);
+    
+    bookDetails.innerHTML = `
+        <div class="book-details-content">
+            <button class="close-button">&times;</button>
+            <h2>${book.title}</h2>
+            <p>作者：${book.author}</p>
+            <p>出書人：${book.presenter}</p>
+            ${averageRating !== null ? `
+            <p class="book-rating detail-rating">
+                平均評分：
+                <span class="stars">${generateStarRating(averageRating)}</span>
+            </p>` : ''}
+            <h3>讀者評價</h3>
+            <div class="review-list">
+                ${book.reviews.map(review => `
+                    <div class="review-item">
+                        <button class="delete-button delete-review-button" data-book-id="${book.id}" data-review-id="${review.id}">刪除</button>
+                        <p>
+                            <strong>${review.reviewer}</strong>
+                            ${review.rating ? ` - ${"★".repeat(review.rating)}${"☆".repeat(5-review.rating)}` : ''}
+                        </p>
+                        <p>${review.comment}</p>
+                        ${review.fullReviewUrl ? `<a href="${review.fullReviewUrl}" target="_blank">閱讀完整心得</a>` : ''}
+                    </div>
+                `).join('')}
+            </div>
+            <button class="add-review-button" data-book-id="${book.id}">新增評論</button>
+        </div>
+    `;
+
+    bookDetails.classList.remove('hidden');
+
+    // 設置關閉按鈕事件
+    const closeButton = bookDetails.querySelector('.close-button');
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            bookDetails.classList.add('hidden');
+        });
+    }
+
+    // 點擊背景關閉
+    bookDetails.addEventListener('click', (e) => {
+        if (e.target === bookDetails) {
+            bookDetails.classList.add('hidden');
+        }
+    });
+
+    // 新增評論按鈕事件
+    const addReviewButton = bookDetails.querySelector('.add-review-button');
+    if (addReviewButton) {
+        addReviewButton.addEventListener('click', () => {
+            document.getElementById('reviewBookId').value = bookId;
+            document.getElementById('addReviewForm').classList.remove('hidden');
+        });
+    }
+}
