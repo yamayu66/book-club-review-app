@@ -106,11 +106,20 @@ h1 {
 }
 
 .book-author, .book-presenter {
-    color: #666;
     margin: 10px 0;
     font-size: 1em;
     font-weight: 500;
     line-height: 1.6;
+}
+
+.book-author {
+    color: #7EACCF;  /* 柔和的淺藍色 */
+    letter-spacing: 0.5px;
+}
+
+.book-presenter {
+    color: #E9B384;  /* 溫暖的淺橘色 */
+    letter-spacing: 0.5px;
 }
 
 .book-summary {
