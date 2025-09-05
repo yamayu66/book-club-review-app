@@ -291,7 +291,7 @@ export const defaultBooks = [
     "period": 5,
     "title": "文豪偵探",
     "author": "夏目漱石、泉鏡花、谷崎潤一郎、芥川龍之介、佐藤春夫",
-    "presenter": "Inlin",
+    "presenter": "ヨタ",
     "summary": "帶你穿透人心的幽微，來到日本偵探小說的原點\n日台聯手精心策劃，華文世界第一本文豪偵探小說精選集隆重登場！",
     "reviews": [
       {
