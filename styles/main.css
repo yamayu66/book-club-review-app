@@ -123,9 +123,18 @@ h1 {
 }
 
 .book-summary {
-    color: #444;
+    color: #666;        /* 改用更淺的灰色 */
     margin: 10px 0;
     white-space: pre-line;
+    font-size: 0.85em;  /* 再縮小字體 */
+    line-height: 1.6;   /* 保持行高 */
+    opacity: 0.95;      /* 微調透明度 */
+    padding-left: 15px; /* 左側內距 */
+    border-left: 3px solid #7C9D96; /* 加入左側豎線，使用主題色 */
+    margin-left: 5px;   /* 左側外距 */
+    background: rgba(124,157,150,0.03); /* 淺淡的背景色 */
+    padding: 10px 15px; /* 上下左右內距 */
+    border-radius: 0 8px 8px 0; /* 右側圓角 */
 }
 
 .review-count {
