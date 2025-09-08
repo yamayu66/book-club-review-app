@@ -63,7 +63,7 @@ function displayBooks() {
                     <span class="stars">${'★'.repeat(Math.round(avgRating))}${'☆'.repeat(5 - Math.round(avgRating))}</span>
                     <span class="rating-number">${avgRating}</span>
                 </div>
-                <p class="review-count">📚 ${book.reviews.length} 則評價</p>
+                <p class="review-count">💬 ${book.reviews.length} 則評價</p>
             </div>
         `;
     }).join('');
