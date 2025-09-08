@@ -20,15 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.classList.add('active');
         }
     });
-
-    // 設置清除資料按鈕的事件監聽
-    document.getElementById('clearDataBtn').addEventListener('click', () => {
-        showConfirmDialog('確定要清除所有資料嗎？這個操作無法復原！', () => {
-            localStorage.removeItem('books');
-            books = [];
-            displayBooks();
-        });
-    });
 });
 
 // 設置期數導航
@@ -59,7 +50,10 @@ function displayBooks() {
         const avgRating = calculateAverageRating(book.reviews);
         return `
             <div class="book-card" data-book-id="${book.id}">
-                <button class="delete-button delete-book-button" data-book-id="${book.id}">X</button>
+                <div class="card-actions">
+                    <button class="edit-button edit-book-button" data-book-id="${book.id}">✎</button>
+                    <button class="delete-button delete-book-button" data-book-id="${book.id}">X</button>
+                </div>
                 <h2 class="book-title">${book.title}</h2>
                 <p class="book-author">作者：${book.author}</p>
                 <p class="book-presenter">出書人：${book.presenter}</p>
@@ -157,15 +151,6 @@ function setupEventListeners() {
         }
     });
 
-    // 評論刪除按鈕事件
-    document.getElementById('bookDetails').addEventListener('click', (e) => {
-        if (e.target.classList.contains('delete-review-button')) {
-            const bookId = parseInt(e.target.dataset.bookId);
-            const reviewId = parseInt(e.target.dataset.reviewId);
-            showConfirmDialog('確定要刪除這則評論嗎？', () => deleteReview(bookId, reviewId));
-        }
-    });
-
     // 確認對話框按鈕事件
     document.getElementById('confirmDelete').addEventListener('click', () => {
         if (typeof currentDeleteCallback === 'function') {
@@ -176,6 +161,72 @@ function setupEventListeners() {
 
     document.getElementById('cancelDelete').addEventListener('click', () => {
         document.getElementById('confirmDialog').classList.add('hidden');
+    });
+
+    // 編輯評論表單提交事件
+    document.getElementById('editReviewForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const bookId = parseInt(document.getElementById('editReviewBookId').value);
+        const reviewId = parseInt(document.getElementById('editReviewId').value);
+        
+        const book = books.find(b => b.id === bookId);
+        if (!book) return;
+
+        const review = book.reviews.find(r => r.id === reviewId);
+        if (!review) return;
+
+        // 更新評論資料
+        review.reviewer = document.getElementById('editReviewerName').value;
+        review.rating = parseInt(document.getElementById('editReviewRating').value);
+        review.comment = document.getElementById('editReviewComment').value;
+        const reviewLink = document.getElementById('editReviewLink').value;
+        review.fullReviewUrl = reviewLink || null;
+
+        saveBooks();
+        showBookDetails(bookId);
+        document.getElementById('editReviewForm').classList.add('hidden');
+    });
+
+    // 編輯書籍的事件監聽
+    document.getElementById('bookList').addEventListener('click', (e) => {
+        if (e.target.classList.contains('edit-book-button')) {
+            e.stopPropagation();
+            const bookId = parseInt(e.target.dataset.bookId);
+            showEditBookForm(bookId);
+        }
+    });
+
+    // 編輯評論的事件監聽
+    document.getElementById('bookDetails').addEventListener('click', (e) => {
+        if (e.target.classList.contains('edit-review-button')) {
+            e.stopPropagation();
+            const bookId = parseInt(e.target.dataset.bookId);
+            const reviewId = parseInt(e.target.dataset.reviewId);
+            showEditReviewForm(bookId, reviewId);
+        }
+    });
+
+    // 處理編輯表單提交
+    document.getElementById('editBookFormContent').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const bookId = parseInt(document.getElementById('editBookId').value);
+        const book = books.find(b => b.id === bookId);
+        
+        if (book) {
+            book.title = document.getElementById('editBookTitle').value;
+            book.author = document.getElementById('editBookAuthor').value;
+            book.presenter = document.getElementById('editBookPresenter').value;
+            book.summary = document.getElementById('editBookSummary').value;
+            
+            saveBooks();
+            displayBooks();
+            document.getElementById('editBookForm').classList.add('hidden');
+        }
+    });
+
+    // 關閉編輯表單的事件
+    document.querySelector('#editBookForm .close-button').addEventListener('click', () => {
+        document.getElementById('editBookForm').classList.add('hidden');
     });
 }
 
@@ -197,7 +248,10 @@ function showBookDetails(bookId) {
             <div class="review-list">
                 ${book.reviews.map(review => `
                     <div class="review-item">
-                        <button class="delete-button" data-book-id="${book.id}" data-review-id="${review.id}">×</button>
+                        <div class="review-actions">
+                            <button class="edit-review-button" data-book-id="${book.id}" data-review-id="${review.id}">✎</button>
+                            <button class="delete-button" data-book-id="${book.id}" data-review-id="${review.id}">×</button>
+                        </div>
                         <p><strong>${review.reviewer}</strong></p>
                         ${review.rating ? `
                         <div class="book-rating">
@@ -217,14 +271,19 @@ function showBookDetails(bookId) {
     bookDetails.innerHTML = detailsContent;
     bookDetails.classList.remove('hidden');
 
-    // 添加評論刪除按鈕的事件監聽器
-    const deleteButtons = bookDetails.querySelectorAll('.delete-button');
-    deleteButtons.forEach(button => {
+    // 添加評論編輯和刪除按鈕的事件監聽器
+    const reviewButtons = bookDetails.querySelectorAll('.edit-review-button, .delete-button');
+    reviewButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             e.stopPropagation();
             const bookId = parseInt(e.target.dataset.bookId);
             const reviewId = parseInt(e.target.dataset.reviewId);
-            showConfirmDialog('確定要刪除這則評論嗎？', () => deleteReview(bookId, reviewId));
+            
+            if (e.target.classList.contains('delete-button')) {
+                showConfirmDialog('確定要刪除這則評論嗎？', () => deleteReview(bookId, reviewId));
+            } else if (e.target.classList.contains('edit-review-button')) {
+                showEditReviewForm(bookId, reviewId);
+            }
         });
     });
 
@@ -294,6 +353,71 @@ function deleteReview(bookId, reviewId) {
         }
     }
 }
+
+// 顯示編輯書籍表單
+function showEditBookForm(bookId) {
+    const book = books.find(b => b.id === bookId);
+    if (!book) return;
+
+    // 填充表單
+    document.getElementById('editBookId').value = book.id;
+    document.getElementById('editBookTitle').value = book.title;
+    document.getElementById('editBookAuthor').value = book.author;
+    document.getElementById('editBookPresenter').value = book.presenter;
+    document.getElementById('editBookSummary').value = book.summary;
+
+    // 顯示編輯表單
+    document.getElementById('editBookForm').classList.remove('hidden');
+}
+
+// 顯示評論編輯表單
+function showEditReviewForm(bookId, reviewId) {
+    const book = books.find(b => b.id === bookId);
+    if (!book) return;
+
+    const review = book.reviews.find(r => r.id === reviewId);
+    if (!review) return;
+
+    // 填充表單
+    document.getElementById('editReviewBookId').value = bookId;
+    document.getElementById('editReviewId').value = reviewId;
+    document.getElementById('editReviewerName').value = review.reviewer;
+    document.getElementById('editReviewRating').value = review.rating;
+    document.getElementById('editReviewComment').value = review.comment;
+    document.getElementById('editReviewLink').value = review.fullReviewUrl || '';
+
+    // 顯示編輯表單
+    document.getElementById('editReviewForm').classList.remove('hidden');
+}
+
+// 處理評論編輯表單提交
+document.getElementById('editReviewFormContent').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const bookId = parseInt(document.getElementById('editReviewBookId').value);
+    const reviewId = parseInt(document.getElementById('editReviewId').value);
+    
+    const book = books.find(b => b.id === bookId);
+    if (!book) return;
+
+    const review = book.reviews.find(r => r.id === reviewId);
+    if (!review) return;
+
+    // 更新評論資料
+    review.reviewer = document.getElementById('editReviewerName').value;
+    review.rating = parseFloat(document.getElementById('editReviewRating').value);
+    review.comment = document.getElementById('editReviewComment').value;
+    const reviewLink = document.getElementById('editReviewLink').value;
+    review.fullReviewUrl = reviewLink || null;
+
+    saveBooks();
+    showBookDetails(bookId);
+    document.getElementById('editReviewForm').classList.add('hidden');
+});
+
+// 關閉評論編輯表單的事件
+document.querySelector('#editReviewForm .close-button').addEventListener('click', () => {
+    document.getElementById('editReviewForm').classList.add('hidden');
+});
 
 // 保存書籍資料到 localStorage
 function saveBooks() {

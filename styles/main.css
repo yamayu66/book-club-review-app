@@ -177,31 +177,81 @@ h1 {
     background: #6b8c85;
 }
 
-.delete-button {
+.card-actions {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    background: white;
-    border: none;
+    right: 0;
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8), transparent);
+    border-radius: 20px 0 0 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-top: 15px; /* 避開標題 */
+}
+
+.book-card:hover .card-actions {
+    opacity: 1;
+}
+
+.review-item {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(124, 157, 150, 0.1);
+}
+
+.review-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.review-item:hover .review-actions {
+    opacity: 1;
+}
+
+.delete-button,
+.edit-button,
+.edit-review-button {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(124, 157, 150, 0.2);
     color: #7C9D96;
     cursor: pointer;
-    font-size: 10px;
-    padding: 8px;
+    padding: 6px;
     line-height: 1;
-    border-radius: 12px;
-    width: 35px;
-    height: 35px;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(124,157,150,0.15);
+    backdrop-filter: blur(4px);
 }
 
-.delete-button:hover {
+.delete-button {
+    font-size: 14px;
+}
+
+.edit-button,
+.edit-review-button {
+    font-size: 15px;
+}
+
+.delete-button:hover,
+.edit-button:hover,
+.edit-review-button:hover {
     color: white;
     background: #7C9D96;
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    border-color: #7C9D96;
 }
 
 /* 模態框樣式 */

@@ -107,6 +107,63 @@
         </div>
     </div>
 
+    <!-- 編輯書籍表單 -->
+    <div id="editBookForm" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2>編輯書籍</h2>
+            <form id="editBookFormContent">
+                <input type="hidden" id="editBookId">
+                <div class="form-group">
+                    <label for="editBookTitle">書名</label>
+                    <input type="text" id="editBookTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="editBookAuthor">作者</label>
+                    <input type="text" id="editBookAuthor" required>
+                </div>
+                <div class="form-group">
+                    <label for="editBookPresenter">出書人</label>
+                    <input type="text" id="editBookPresenter" required>
+                </div>
+                <div class="form-group">
+                    <label for="editBookSummary">簡介</label>
+                    <textarea id="editBookSummary" required></textarea>
+                </div>
+                <button type="submit" class="submit-review-btn">更新</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 編輯評論表單 -->
+    <div id="editReviewForm" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2>編輯評論</h2>
+            <form id="editReviewFormContent">
+                <input type="hidden" id="editReviewBookId">
+                <input type="hidden" id="editReviewId">
+                <div class="form-group">
+                    <label for="editReviewerName">評論者</label>
+                    <input type="text" id="editReviewerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="editReviewRating">評分 (1-5，可輸入 0.5 增量)</label>
+                    <input type="number" id="editReviewRating" min="1" max="5" step="0.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="editReviewComment">評論內容</label>
+                    <textarea id="editReviewComment" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="editReviewLink">完整心得連結（選填）</label>
+                    <input type="url" id="editReviewLink">
+                </div>
+                <button type="submit" class="submit-review-btn">更新評論</button>
+            </form>
+        </div>
+    </div>
+
     <script type="module" src="scripts/app.js"></script>
 </body>
 </html>

@@ -357,5 +357,150 @@ export const defaultBooks = [
         "fullReviewUrl": null
       }
     ]
+  },
+  {
+    "id": 11,
+    "period": 4,
+    "title": "地球盡頭的溫室",
+    "author": "金草葉",
+    "presenter": "抽抽",
+    "summary": "2055年，地球爆發落塵災難，有毒的粉塵殺死了大半人類和生物，\n只有少數天生帶有抗體的「耐性種人」，能免於這場災難的傷害。\n為了隔離致命粉塵，有權有錢的人建起超大型圓頂，封鎖整座城市。",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "抽抽",
+        "rating": 4,
+        "comment": "原本看到是末世類型的，以為會再更刺激一點，但其實意外的是一個偏靜態的故事。覺得故事本身的調性也跟植物的主題有點像，沒有這麼動態但靜靜的蔓延的感覺。",
+        "fullReviewUrl": "https://www.dropbox.com/scl/fi/al7c3eaw7ob17vwxc204t/.paper?rlkey=fo83hfbd3zsp0xjfdaxetm5g8&dl=0"
+      },
+      {
+        "id": 2,
+        "reviewer": "弗Fu",
+        "rating": 5,
+        "comment": "在這本書裡能感受到自己很喜歡的那種百合之情，光是開頭看到旅行的是姐妹就讓人很驚喜",
+        "fullReviewUrl": "https://www.plurk.com/p/pgxrzq"
+      },
+      {
+        "id": 3,
+        "reviewer": "Inlin",
+        "rating": 4,
+        "comment": "該怎麼說，個人有輕率地看了封面與文案覺得這會是一個最後主要訴說溫暖含意的科幻作品吧！結果一路看下來真心覺得其實根本不怎麼溫暖，怎麼這樣……當然也不是很冷但真的對我來說不溫暖，很多角色的安排最終還是比較現實味，雖然說對我來說是十足浪漫的故事但論溫度調性和想像的有點差距可惡真的被騙（？）不過我看完覺得這本書對我以科幻來說也是頗好看的作品！",
+        "fullReviewUrl": "https://docs.google.com/document/d/1q2R5FDeRWoVW7IfIWY-C7CyxEHazQfUX0-I43gi0Msg/edit?tab=t.0"
+      },
+      {
+        "id": 4,
+        "reviewer": "SL",
+        "rating": 4,
+        "comment": "圓頂人的敘述，我覺得真的是很符合我對人性惡意的想像。\n普林姆村真的實現了所有人性的理想了吧。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1hNVYkAaBacVwm001X6eb3okuNkQn0hi0F6-kIeDteGE/edit?tab=t.0"
+      },
+      {
+        "id": 5,
+        "reviewer": "藍",
+        "rating": 4,
+        "comment": "首先可以很直接的說我看到最後的總結感想就是「好浪漫」！\n以結論來說我還是蠻喜歡這本書的，平淡和意外性展開搭配得很好，這或許是個適合二刷的書。",
+        "fullReviewUrl": "https://notes.underxheaven.com/preview/b52016eb630bed64421955a4670bf5dd"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "period": 4,
+    "title": "目擊者",
+    "author": " 林伍德．巴克萊",
+    "presenter": "ヨタ",
+    "summary": "精神分裂症患者湯瑪士沉迷於網路地圖軟體，成日足不出戶瀏覽全球各城市街景。當他於網上逛到紐約曼哈頓下東區街頭時，意外發現某棟公寓三樓的窗內出現了一張被塑膠袋套緊的女人面孔，因恐懼而扭曲變形，他堅信自己目睹了兇殺案。",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "ヨタ",
+        "rating": 4,
+        "comment": "裡面好多都是自以爲的為了別人好欸好痛苦。\n雖然整體步調不算沈重但脫離不了的現實無力感。",
+        "fullReviewUrl": "https://docs.google.com/document/d/11YmaUH7G86MW39v6LAoEQaHYJIlgY7pPQfH-J4LLOQc/edit?tab=t.0"
+      },
+      {
+        "id": 2,
+        "reviewer": "Inlin",
+        "rating": 3,
+        "comment": "我對這本書大概八成的好感都在看完結局後消散了。\n作者構成最後的選擇是把耍讀者（主角）放在最優先事項，而對這個題材沒有意圖講述更多。",
+        "fullReviewUrl": "https://docs.google.com/document/d/18Sf5O5x_scVlLuG_dlr3WZYMmW4Dd11RQOj4ah6Bef4/edit?tab=t.0"
+      },
+      {
+        "id": 3,
+        "reviewer": "SL",
+        "rating": 3,
+        "comment": "我是抱持『努力的人該有回報』的那派，但結局完全打哥哥的臉我就覺得看了很不愉快。\n本書標榜是驚悚小說，驚悚的點是最努力的人結果才是受害最深的地方嗎？",
+        "fullReviewUrl": "https://docs.google.com/document/d/1tL4RBd18BApr4GV1eGOVxRdaAOotuHsCIn7zudIsXHQ/edit?tab=t.0"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "period": 4,
+    "title": "最後一次相遇，我們只談喜悅",
+    "author": "達賴喇嘛、戴斯蒙・屠圖、道格拉斯・亞伯拉姆",
+    "presenter": "仙草",
+    "summary": "經歷痛苦與失去之後，仍能發自內心地快樂嗎？\n面對生命中各種無法避免的磨難，該如何超越痛苦，擁抱喜悅而活？\n心智與心靈上該要有怎樣的特質與觀點，才容易感受喜樂？\n如何讓喜悅從一種稍縱即逝的感受，化為恆久的存在？\n人生最終該靠什麼獲得滿足與意義？",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "抽抽",
+        "rating": 4,
+        "comment": "這本書其實比我想像中的還要讓我有所收穫。\n覺得自己本身本來就比較接受佛教的體系教育下成長大的，所以很多觀念我覺得可能會像我不能接受其他宗教的價值觀那樣，也有人會覺得佛教的價值觀好像只會說大話而沒什麼用，但對我來說是相當受用的。",
+        "fullReviewUrl": "https://www.dropbox.com/scl/fi/q1as9jt41j6g618g6ra70/.paper?rlkey=pcnxdnrnstz4kismubmn2jx9c&dl=0"
+      },
+      {
+        "id": 2,
+        "reviewer": "SL",
+        "rating": 4,
+        "comment": "總結來說我真心覺得這本書是本好書，雖然之於現在的我要全然接受實在過於困難，但書中提及人的心中要帶有希望這點，從中還是有感受到一些慰藉。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1oy7G9XdyOy69z8m_uT11wDYLrB4El_Nwti-KyPhTDis/edit?tab=t.0"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "period": 4,
+    "title": "拉波德氏亂數",
+    "author": "童偉格",
+    "presenter": "紆里",
+    "summary": "　　拉波德氏變色龍，一種時間劫後的遺族。\n　　每年四月，旱季起始，彼時，一整個世代的牠們，都將在旱地裡死絕，無一可能倖免。──童偉格",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "抽抽",
+        "rating": 4,
+        "comment": "目前整個月斷斷續續讀著大概讀了七成左右，想著忙趕著看完也有點糟蹋了，就先寫下心得，我對各個章節的心得反而不深，主體是整本書的心得的感覺，覺得自己還不是很能對裡頭的故事有感觸，只是讀的時候曾有個瞬間，想著這樣寫下這些故事好嗎，有些故事讀起來太過悲傷至於讓這些故事被精緻料理成一道菜餚好像顯得有些殘忍，但又想若無人寫出無人轉譯，那這些故事真的在歷史與文學中沉寂了才是一種哀傷吧。",
+        "fullReviewUrl": "https://www.dropbox.com/scl/fi/m2xhijat56ldbabfg1b3f/.paper?rlkey=whpoygakv1lvwelnljwf585ji&dl=0"
+      },
+      {
+        "id": 2,
+        "reviewer": "紆里",
+        "rating": 5,
+        "comment": "整體來說，可以感覺到，他的寫作又向著他所說的「透風」，也許意思是向著「你不必是我（而可能也是我不必是你）」的友誼之愛更向前一步了，也說不定吧。",
+        "fullReviewUrl": "https://docs.google.com/document/d/11mGS2NZOj781e9QjqL4DeIh3K0TNah55KRF1HLF7iKw/edit?tab=t.0"
+      },
+      {
+        "id": 3,
+        "reviewer": "Inlin",
+        "rating": 4,
+        "comment": "對我而言這本書給我的收穫其實是很難言語的事物，有種現在才想到要這樣去看二戰的各種部分的感，看的過程也有在想從這種角度看二戰說來也是第一次。\n看完第一時間真的有我真的有機會要去更思考一下二戰耶……的事到如今對自己閱讀歷史的淺薄感到慚愧；也有對於文字原來可以這樣寫的驚奇，感謝本次出書帶給我這個體驗，是真的覺得蠻有趣的東西！",
+        "fullReviewUrl": "https://docs.google.com/document/d/1o6D8Rj4KxWnubsoKeZpoqEghI-inMOlZYeP4yWCAwho/edit?tab=t.0"
+      },
+      {
+        "id": 4,
+        "reviewer": "SL",
+        "rating": 3,
+        "comment": "整體來說，我覺得是個敘述很美的書。但在缺乏相關背景知識之下，對我而言很不容易具體去想像作者所描述的內容。或許在之後有空去看看文章中所提及的人事物的故事以後，再回頭看這本書的話會比較容易理解？",
+        "fullReviewUrl": "https://docs.google.com/document/d/16AsLEkWTHUjSUjbiQ4tk9--oKDzrRM8YjCg96gs6_CM/edit?tab=t.0"
+      },
+      {
+        "id": 5,
+        "reviewer": "藍",
+        "rating": 4,
+        "comment": "第一次看這種類型的散文小說，老實說沒有看很懂，或許每次重讀都可以再獲得新理解的內容。整本小說其實應該沒有很長……嗎？但因為閱讀能力不夠的關係看得比較慢，要是能讀得更慢一點，花時間去理解的話可能能理解得更多一些，在看的時候有覺得我真的是失去耐心的現代人（？）人類真的不應該看太多short。",
+        "fullReviewUrl": "https://notes.underxheaven.com/preview/80cacfe424603e7b358271be5730634d"
+      }
+    ]
   }
 ]
