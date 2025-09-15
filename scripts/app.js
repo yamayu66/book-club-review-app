@@ -138,7 +138,7 @@ function setupEventListeners() {
             const newReview = {
                 id: book.reviews.length > 0 ? Math.max(...book.reviews.map(r => r.id)) + 1 : 1,
                 reviewer: document.getElementById('reviewerName').value,
-                rating: parseInt(document.getElementById('reviewRating').value),
+                rating: document.getElementById('reviewRating').value ? parseFloat(document.getElementById('reviewRating').value) : null,
                 comment: document.getElementById('reviewComment').value,
                 fullReviewUrl: linkValue || null
             };
@@ -404,7 +404,8 @@ document.getElementById('editReviewFormContent').addEventListener('submit', (e) 
 
     // 更新評論資料
     review.reviewer = document.getElementById('editReviewerName').value;
-    review.rating = parseFloat(document.getElementById('editReviewRating').value);
+    const ratingValue = document.getElementById('editReviewRating').value;
+    review.rating = ratingValue ? parseFloat(ratingValue) : null;
     review.comment = document.getElementById('editReviewComment').value;
     const reviewLink = document.getElementById('editReviewLink').value;
     review.fullReviewUrl = reviewLink || null;

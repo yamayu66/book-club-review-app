@@ -48,6 +48,13 @@ export const defaultBooks = [
         "reviewer": "三三",
         "comment": "因為是直譯本的關係，用字很簡單，但描述的景色與內心的糾結混亂，又是那麼的具體、完整，是我所嚮往的文章呈現風格。",
         "fullReviewUrl": "https://www.plurk.com/p/3gfo19i0k9"
+      },
+      {
+        "id": 7,
+        "reviewer": "紆里",
+        "rating": null,
+        "comment": "覺得整體看起來蠻順暢的，情感算細膩的感?\n比較是跟著走路的感，不是起立鼓掌的激昂感(???",
+        "fullReviewUrl": "https://www.plurk.com/p/3ggxkbq48h"
       }
     ]
   },
@@ -86,6 +93,13 @@ export const defaultBooks = [
         "rating": 2,
         "comment": "本書讓我徹底地開始反省自己在以前創作時可能會犯的毛病。\n推理與一個全新的世界概念，無論是哪一種都足以消耗大篇幅以及讀者的腦力，然後作者把這兩者全部都寫進一個故事裡了。是一個沒有做選擇的大人。",
         "fullReviewUrl": "https://heavy-paddleboat-c0e.notion.site/K-I-N-G-153417f925c3801c8cdad8e8310d259e"
+      },
+      {
+        "id": 5,
+        "reviewer": "紆里",
+        "rating": null,
+        "comment": "我喜歡概念對話所以這本對我來說是有趣而且看起來不吃力",
+        "fullReviewUrl": "https://www.plurk.com/p/3gkwaijl2a"
       }
     ]
   },
@@ -138,6 +152,13 @@ export const defaultBooks = [
         "rating": 4,
         "comment": "當初會遇到這本書是因為2022年的書店大賞，而且在2022年俄烏戰爭爆發後這本書突然銷量暴增讓我很在意。\n\n看之前只知道是俄羅斯女狙擊手的故事，甚至不知道這是捏造時空背景還是基於哪一段史實的小說。現在覺得當初沒有被劇透真的太好了。\n啊，但是我有看到一句書評「在此書中與主角一起發現真正的敵人是誰」，這讓我在看書時也一邊在推敲著這篇故事裡想訴說的真正的敵人會是誰。",
         "fullReviewUrl": "https://heavy-paddleboat-c0e.notion.site/166417f925c3801dbb84cdad5abc7a04"
+      },
+      {
+        "id": 7,
+        "reviewer": "紆里",
+        "rating": null,
+        "comment": "由日本人想像的德蘇戰爭的居民樣態太有趣了......",
+        "fullReviewUrl": "https://www.plurk.com/p/3goh4hrkgm"
       }
     ]
   },
@@ -169,6 +190,13 @@ export const defaultBooks = [
         "rating": 4,
         "comment": "因為最開始抱著「我想看魔法」的心情，所以在接著意識到「這居然是科幻嗎」的時候有點小遺憾的覺得好像選錯了。但我也沒有太失望，就是普通的繼續看下去，一方面也是因為覺得這種：在遠古人面前用打火機就像魔法一樣，這個想法挺有趣的。",
         "fullReviewUrl": "https://notes.underxheaven.com/preview/05c2bb61c13497aa672314fc1a1b0f3c"
+      },
+      {
+        "id": 4,
+        "reviewer": "紆里",
+        "rating": 4,
+        "comment": "好精彩的安排……好喜歡埋梗裡面有政治正確吐槽ㄉ成分",
+        "fullReviewUrl": "https://www.plurk.com/p/3gsic0iko6"
       }
     ]
   },
@@ -178,7 +206,7 @@ export const defaultBooks = [
     "title": "臺灣漫遊錄",
     "author": "楊双子",
     "presenter": "SL",
-    "summary": "從瓜子、米篩目、麻薏湯，到生魚片、壽喜燒，再到鹹蛋糕、蜜豆冰，小說宛如一場筵席，將青山千鶴子來臺一年的春夏秋冬，寫進這場筵席裡，有臺式小點，有日式大菜，更有多元血統的料理，比如入境便隨之風味流轉的咖哩。在次第端上的菜色中，這位小說總舖師悄悄加入了幾味，那是人與人之間因背負著不同的生命文化而舌尖異化般的，難以描摹的滋味。",
+    "summary": "從瓜子、米篩目、麻薏湯，到生魚片、壽喜燒，再到鹹蛋糕、蜜豆冰，小說宛如一場筵席，將青山千鶴子來臺一年的春夏秋冬，寫進這場筵席裡，有臺式小點，有日式大菜，更有多元血統的料理，比如入境便隨之風味流轉的咖哩。\n在次第端上的菜色中，這位小說總舖師悄悄加入了幾味，那是人與人之間因背負著不同的生命文化而舌尖異化般的，難以描摹的滋味。",
     "reviews": [
       {
         "id": 2,
@@ -214,6 +242,13 @@ export const defaultBooks = [
         "rating": 4,
         "comment": "《臺灣漫遊錄》是以減法寫作描繪台灣的風土與人情的作品，在淡淡的友情與文化交流中，展現出作者成熟的筆法與節制的美感。",
         "fullReviewUrl": "https://hackmd.io/@Riska0813/H1wjm0Zskg"
+      },
+      {
+        "id": 7,
+        "reviewer": "紆里",
+        "rating": 5,
+        "comment": "小千像是隔著一層膜的存在，不刻意隱藏，卻自然地不展示強烈情緒，讓人難以真正觸及其內在。 \n這份模糊與距離感，既是千鶴子投射的理想，也是小千自身選擇的生活方式，一種溫柔而帶著愧疚的自我保留。",
+        "fullReviewUrl": "https://www.plurk.com/p/3gxnpfx0xr"
       }
     ]
   },
@@ -500,6 +535,251 @@ export const defaultBooks = [
         "rating": 4,
         "comment": "第一次看這種類型的散文小說，老實說沒有看很懂，或許每次重讀都可以再獲得新理解的內容。整本小說其實應該沒有很長……嗎？但因為閱讀能力不夠的關係看得比較慢，要是能讀得更慢一點，花時間去理解的話可能能理解得更多一些，在看的時候有覺得我真的是失去耐心的現代人（？）人類真的不應該看太多short。",
         "fullReviewUrl": "https://notes.underxheaven.com/preview/80cacfe424603e7b358271be5730634d"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "period": 4,
+    "title": "佩珀爾的幻象",
+    "author": "伊坂幸太郎",
+    "presenter": "SL",
+    "summary": "當你擁有一個微弱的，\n發動方式還有點丟臉的超能力時，\n你會怎麼使用它？",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "抽抽",
+        "rating": 4,
+        "comment": "雖然放入了尼采的要素，對尼采ミリしら的我只覺得總之小說很好看，不愧是寫了很多本小說的人，作為一本小說普通的很有趣！",
+        "fullReviewUrl": "https://www.dropbox.com/scl/fi/vkw6ugvt78nyzeh8q4uhj/.paper?rlkey=a3edhjl1ewhahq9dov31z58vz&dl=0"
+      },
+      {
+        "id": 2,
+        "reviewer": "紆里",
+        "rating": 4,
+        "comment": "一開始看書籍簡介單純的預期好像會用不少時事梗，或者說政治梗的要素比較強烈（這邊的政治梗比較偏世俗常見價值觀所認同／會揶揄的日常政治的部分，但並非以說教或意圖訴求的形式使用，比較接近「單純是梗」或用來吸引進入的牽繩）。倒是沒有想到他所使用的材料接近我在思考其存在母題／含義的東西。\n",
+        "fullReviewUrl": "https://docs.google.com/document/d/1sB-0IrSAceTLBPA_2lgbra_XsbEFrP0qyaUW2HZunoU/edit?tab=t.0"
+      },
+      {
+        "id": 3,
+        "reviewer": "Inlin",
+        "rating": 5,
+        "comment": "說起來，伊坂大概可以說是我出社會的初期最常看的作家了，但近年來隨著看書量的減少（真讓人慚愧），這次可以說是久違看伊坂作品。讀的過程忍不住在想：實在有一種回了老家一趟的感受。\n儘管我容易一股腦地陷入沉迷的作風不是伊坂這樣，但看伊坂的書，不管他寫什麼題材，寫了怎樣的人，最終都會在過程中感覺到一種接納，就類似回家的感覺，明明也沒被老爸老媽說歡迎回來但就是本能的感覺這個空間是接納自己的這個感受。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1B9O442BsPO_yPe_a0A8a18vRb1yVTIpY3wh4Su58pJw/edit?tab=t.0"
+      },
+      {
+        "id": 4,
+        "reviewer": "SL",
+        "rating": 4.5,
+        "comment": "久違地看伊坂的書（慚愧），覺得對我而言很有趣的事情是，明明伊坂的故事裡經常會描寫到讓人覺得沒有道理又讓人生氣的事情，某方面來說也不是真正解決事情的HAPPY END，但看完後還是覺得這是個溫柔的故事。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1Y4aZphBZ9HZTDS-J3yRztBKtoVEOKAb0F5s9zoxAGjY/edit?tab=t.0"
+      },
+      {
+        "id": 5,
+        "reviewer": "藍",
+        "rating": 5,
+        "comment": "看完時的感受是這本小説還挺酷的。不只是故事尾聲，包括故事的最後作者特意用像是創作者，或者說是上帝視角來介紹角色後續發展的部分也是。小說的故事從滿前面就開始有在給我這樣的感受。\n\n像是在讀小說裡的人物，布藤寫的小説時，特別有印象的地方是在主角（老師）向她提出「需要知道這兩個角色有多厲害」後，布藤特意在後面的小說內容中特意強調了這部分。",
+        "fullReviewUrl": "https://notes.underxheaven.com/preview/4d7a2753fce43962f717b76ab5eca7cc"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "period": 4,
+    "title": "少年與狗",
+    "author": "馳星周",
+    "presenter": "藍",
+    "summary": "在無盡的黑夜裡，\n那些受傷、孤獨與迷茫的人依偎的──是一隻狗。",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "抽抽",
+        "rating": 2,
+        "comment": "剛打開這本書的時候，就想說好像有聞到一股日式雞湯的味道，結果往下看下去……還真的是雞湯文，好久沒看雞湯文了……好像會被翻拍成日本電影的結構😂",
+        "fullReviewUrl": "https://www.dropbox.com/scl/fi/5eb3nx099i6b0qcrw1r1a/.paper?rlkey=ms0ptf1xfl26fjtztkzn71c6m&dl=0"
+      },
+      {
+        "id": 2,
+        "reviewer": "Inlin",
+        "rating": 4,
+        "comment": "說實話看到少年與狗這個名字時，我完全沒想過這會是真正的狗狗故事我以為會是很文學向的是一個少年與狗狗去幹嘛的那種故事，然而翻開後首先從目錄開始震驚：甚至不是從一開始就是少年，是很多人與狗的短篇串成長篇。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1l3rc4T9BL0UZQH9ryNp12wPHSzkTTFj2wTDgRIe_jOY/edit?tab=t.0"
+      },
+      {
+        "id": 3,
+        "reviewer": "SL",
+        "rating": 4,
+        "comment": "首先先想講好久沒看到文體這麼簡潔的的小說了，如果有不喜歡看書但想要開始看書的人的話，這本書是我會想推薦別人去看的寫法（很輕鬆就能看完）。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1JKJdHx6geDHrRypLcVZB59j7Jfa79xkRReKOoFZHZGc/edit?tab=t.0"
+      },
+      {
+        "id": 4,
+        "reviewer": "藍",
+        "rating": 3.5,
+        "comment": "看完之後就很好奇作者究竟是想表達什麼樣的故事，是只單純想寫個狗狗是人類最好的朋友的故事，還是更普通一點只是想寫狗狗旅行的故事？這次讀書會的書是我選的，單純看到標題是少年與狗，我就想到之前看過一部狗狗的電影叫「一條狗的使命」，想說應該是差不多風格的溫馨類型故事，正好上個月是貓貓那這次接狗狗也不錯吧，不過我原本期待的可能是更文學一點的內容。",
+        "fullReviewUrl": "https://notes.underxheaven.com/preview/f868d8813f6c2994dc9b9c8955bde6a4"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "period": 4,
+    "title": "火花",
+    "author": "又吉直樹",
+    "presenter": "阿太",
+    "summary": "又吉直樹的小說處女作，以東京漫才界為舞台，描寫新人搞笑藝人德永與才華洋溢卻特立獨行的前輩神谷之間的師徒關係。德永一邊記錄神谷的言行，一邊在理想與現實間掙扎，探索搞笑藝術的本質與人生的意義。",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "SL",
+        "rating": 4,
+        "comment": "原本以為是主述者/德永自己的相聲生活，結果是德永在側寫自己與師傅/神谷的故事。德永對神谷有欽佩、有崇拜、有憐憫、也有惋惜——我覺得德永在看到模仿自己的神谷是真的很難過，在自己心中一直閃耀著的崇拜對象，卻違背了自己曾說過的話而開始想要妥協——而且模仿的對象竟然還是自己！看著自己的偶像自己要選擇殞落這件事，真的就是很難過。\n",
+        "fullReviewUrl": "https://docs.google.com/document/d/1MHLsbFtFKg2r5Tr81VDQicnQwKLOp9CQ2PE3sbVbFQE/edit?tab=t.0"
+      },
+      {
+        "id": 2,
+        "reviewer": "阿太",
+        "rating": 4.5,
+        "comment": "人們把熱情和努力比喻成很燙的東西，火熱的、燃燒的，但有努力過的人應該都知道，其實那都是些孤單和冰冷的瞬間，就看你能堅持多久。",
+        "fullReviewUrl": "https://www.plurk.com/p/3fv27s0qzj"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "period": 4,
+    "title": "骰子人",
+    "author": "路克．萊因哈特",
+    "presenter": "ㄊㄊ",
+    "summary": "主角是一位感到生活無趣、精神瀕臨崩潰的心理醫師，他決定以擲骰子的方式來決定自己的一切行動——無論是日常選擇、職業決策，甚至是極具爭議的行為。他將人生交給隨機性，並逐漸發展出一套名為「骰子教」的生活哲學。",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "抽抽",
+        "rating": 3,
+        "comment": "但我光看開頭就覺得超不舒服的wwwww未成年真的不能看\n\n我覺得18禁的部份是真的滿精神污染的，雖然很多文學作品也都很過激但多少好像給我一種抽離感，像在看一個與我無關的世界的故事的感覺比較多\n\n但這本給人感覺太像會發生的事情了，所以很讓人害怕",
+        "fullReviewUrl": "https://www.plurk.com/p/3fznsty5fi"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "period": 4,
+    "title": "單車失竊記",
+    "author": "吳明益",
+    "presenter": "Inlin",
+    "summary": "一部融合歷史、記憶與虛構的長篇小說，以「尋找失蹤的父親與腳踏車」為主軸，展開一段跨越時代的追索旅程。主角「我」透過一輛幸福牌腳踏車，逐步拼湊出家族記憶與台灣歷史的片段，串聯起戰爭創傷、物件記憶與人與動物之間的情感。",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "抽抽",
+        "rating": 5,
+        "comment": "雖然原本也不是會覺得很難看，但這本書的好看程度覺得遠超過預期……！\n\n整部作品像是帶著讀者透過追尋單車去了解歷史的部分我很喜歡，像是透過故事也經歷了一邊，就如開頭主角所說，因為是「好命的」么子，跟其他人活在不同年代，只能透過不同年代的人的講述，去設法再體驗，去想辦法跟他們站在一樣的年代。讀的時候，也有種透過這些故事想辦法跟過去的歷史做連結的感覺。",
+        "fullReviewUrl": "https://www.dropbox.com/scl/fi/a5j2yk39e1d6090iusot7/.paper?rlkey=639ozgjq1ioadkaq56mehqbov&dl=0"
+      },
+      {
+        "id": 2,
+        "reviewer": "紆里",
+        "rating": 4.5,
+        "comment": "這本書以前有讀過一次，只記得一種惆悵感或者凝視空洞的印象（當時會一次看完再記錄或評價）。\n\n重看的感覺是，吳明益真的很擅長把資料處理的容易入口......（小並感）。這個入口包含：有趣、容易想像的畫面、不打斷節奏、有存在在此的意義（扣回要講述主題）、處理後這個資料仍然以資料讓讀者所知。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1BImlUW139aoMHuhr4MO13mw76qEKctfpb2cwt_jz0R4/edit?tab=t.0"
+      },
+      {
+        "id": 3,
+        "reviewer": "Inlin",
+        "rating": 4.5,
+        "comment": "不曉得為何覺得本期讀書會看到的書，從打開書名的預期一路往後意外在好的意味上都背叛了最初預想。\n\n說實話單車失竊記我從看書名和一開始看，預期本來是奇幻單軸冒險故事那種感覺，沒想到是資料量遠比預想龐大，講了相當不少人的故事的作品，也坦白說我沒想到這本又再次帶我們到戰爭話題（首先我就不知道這本會是台灣家族故事的感覺），兩輪讀書會一路下來，我突然覺得名作、經典簡直是脫離不了戰爭，特別是二戰，藉著讀書會不同人出不同國家作者的書，感受到「世界大戰」牽動的真的是整個世界，是我本次看完這本的一個深刻感想。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1Qvxb9rvpvzdIPqa5pupb6MQszCqFAs3Rz4IwPItjFLc/edit?tab=t.0"
+      },
+      {
+        "id": 4,
+        "reviewer": "SL",
+        "rating": 5,
+        "comment": "看完後不知道為什麼腦中浮出一句話：「你就是我的原因」。\n\n我非常後知後覺地看到中間才發現這是一本龐大的群像劇，每個人都在過著自己的人生，一直到最後終於有個人將所有線索串起來，才發現其實所有人的人生都或多或少地參與在一起。整體來說我覺得這本書的氛圍很溫柔，但在描述戰爭的情景時也確實感受到其殘酷。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1NouHgNAad2uqFhlKa0y0CwhK7WoRAy3IjvXSaOVDVHA/edit?tab=t.0"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "period": 4,
+    "title": "為什麼魚不存在",
+    "author": "露露・米勒",
+    "presenter": "凜苑",
+    "summary": "這本書表面上是一本關於分類學的科普作品，實則是一場關於信仰、秩序與混亂的人生探索。作者以19世紀美國博物學家大衛・史塔爾・喬丹（David Starr Jordan）為主軸，講述他如何在災難中堅持重建魚類標本、創立分類系統，卻最終發現「魚」這個分類根本不存在於科學邏輯中。",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "抽抽",
+        "rating": 2.5,
+        "comment": "原來是大衛傳，但第一次知道這個人，也覺得很有意思，鋪陳了整本書的篇幅，最後用來說明講述魚不存在的這件事情的構造我也覺得滿有趣的。\n\n雖然就魚為什麼不存在這件事情，最後還是要去讀其他書才能完整了解，但也因為本質上更多是講述作者對大衛從憧憬信仰，到深入了解後信仰破碎，最後像是整理心情似的寫下這本書，也整理了自己對人生觀的情緒，覺得這部分宅宅很能理解。\n\n包括信仰破碎這點，也跟書裡面，那種古時候對星相學，又或者現在的人對於「魚」的解釋不同的感覺也類似，雖然我對魚這個分類沒有堅持，人家跟我說是什麼就是什麼，但對於很在意的人來說，那種堅信不移的價值觀被打碎的的瞬間大概真的很衝擊。",
+        "fullReviewUrl": "https://www.dropbox.com/scl/fi/5b4gi1dgudba6bj639s6b/.paper?rlkey=n7a25vyur7qw86r9z3wmwcqoe&dl=0"
+      },
+      {
+        "id": 2,
+        "reviewer": "SL",
+        "rating": 2,
+        "comment": "好久沒有明知道不合自己電波，但還要硬看完一本書的事情了……原本以為是科普書還有點期待，但看著越來越覺得是作者的個人部落格心情日誌，看到中間才終於想說要去看一下網路簡介跟封底的介紹，喔好吧他老早就說他是一本雞湯了只是我太晚才發現（上次好像也是同樣的事……）。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1NGTMOkbC4Fgw5DRE1WRx0rF6DfOXKyYLCvDnOCtWpIQ/edit?tab=t.0"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "period": 3,
+    "title": "妳一生的預言",
+    "author": "姜峯楠",
+    "presenter": "抽抽",
+    "summary": "這是一本科幻短篇小說集，收錄了八篇作品，每篇都像一場思想實驗，探問語言、時間、自由意志、宗教與人性等核心命題。",
+    "reviews": [
+      {
+        "id": 1,
+        "reviewer": "凜苑",
+        "rating": 4,
+        "comment": "這本書總體來說把科技跟宗教的接點完美連接，我也總喜歡說的，科學本身就是一種信仰，除此一想，科學幻想跟宗教幻想作品（比如但丁的神曲）也可以算是相差無幾，兩者之間能擁有相仿的浪漫也不令人意外了。",
+        "fullReviewUrl": "https://www.dropbox.com/scl/fi/eufg41ld54h8w0zcl6fwx/.paper?rlkey=c11bhupm8x0cidudesv5ru8pu&dl=0"
+      },
+      {
+        "id": 2,
+        "reviewer": "抽抽",
+        "rating": 5,
+        "comment": "這本書比我想像中的還要有趣滿多的，主要可能是因為先前讀了許多西洋小說都讓我滿自我懷疑自己閱讀西洋小說的能力的，常常覺得沒有不有趣但又沒有到這麼有趣。\n\n這本雖然有時候敘述理論時會比較費力，但大部分時候都相當淺顯好懂，用字也簡單，但卻還是可以從裡面感受到特別有力量的句子，這點不曉得是作者又或者是譯者的功力但自己相當喜歡也覺得很厲害！",
+        "fullReviewUrl": "https://telegra.ph/%E5%A6%B3%E4%B8%80%E7%94%9F%E7%9A%84%E9%A0%90%E8%A8%80-03-29"
+      },
+      {
+        "id": 3,
+        "reviewer": "紆里",
+        "rating": 4,
+        "comment": "雖然是小說集，理論上劇情間並不相關，不過可以感覺到整本書都包含有作者獨特的關懷。對於如所其事的現實，一種關於最後回到原點的、不去抵抗被註定的事情，回歸到己身的，關於現代式的反叛、成長與自由（對應的反義詞：童年與天命）。這種關懷同時帶有反映現實的銳利與疏離，而很可能被視為是一種一切努力無用的虛無。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1SsVA2_L3zuev1OVJrm1uoHhAy3Mag3fS-eWreu7Rhfo/edit?tab=t.0"
+      },
+      {
+        "id": 4,
+        "reviewer": "弗Fu",
+        "rating": 4.5,
+        "comment": "非常著迷於這篇小說使用的文字，也非常喜歡它透過引用並應用現實生活中已知的學術理論，去完整整篇小說的概念和故事架構的設定。",
+        "fullReviewUrl": "https://docs.google.com/document/d/1uBc11Z1CTgGL8nyuG9dkk2tp5tw2l5ULmAz3v3und5w/edit?tab=t.0"
+      },
+      {
+        "id": 5,
+        "reviewer": "ヨタ",
+        "rating": 4,
+        "comment": "（短篇分別評論，詳連結）",
+        "fullReviewUrl": "https://docs.google.com/document/d/e/2PACX-1vQbmnxOjrTQpNNf9Et4hHGjZVSHDItEubRQFxDXG2YDBBD-3ABrWKiKkdm2inM_RAN_gKuIcyPGZ8ZQ/pub"
+      },
+      {
+        "id": 6,
+        "reviewer": "Inlin",
+        "rating": 4.5,
+        "comment": "看科幻作品果然光是讀的過程自己就會覺得很有趣！看的過程都像自己跟著一起做實驗。\n其實我個人是第一次閱讀整本不同科幻主題的短、中篇小說，這個閱讀感本身就很新鮮。之前同一主題閱讀感來說，比較像同一大綱下的不同條件實驗，這次這種閱讀這個完全不同世界的體驗，比較像分別看在測驗不同主題的實驗的感受，整體來說真的受益良多，引發我近期很多思考，謝謝這次的出題！",
+        "fullReviewUrl": "https://docs.google.com/document/d/1IJTffF1rtRxJnxUwpbSt9c8oneEhGkyyiiBcMQqYaGs/edit?tab=t.0"
+      },
+      {
+        "id": 7,
+        "reviewer": "仙草",
+        "rating": 4,
+        "comment": "我太久沒看歐美那邊的小說了，上次看好像還是BL小說《王室緋聞守則》，或許是跟平常看的類型差異過大，也可能是我本來就沒有很喜歡那種翻譯文學會有的感覺，導致我看第一篇短篇《妳一生的預言》，看到人名出來的時候頭就有點暈，但我覺得我再說下去會得罪全世界的歐美人，所以接下來就一篇一篇講一下心得",
+        "fullReviewUrl": "https://www.plurk.com/p/p7ksq3"
       }
     ]
   }
